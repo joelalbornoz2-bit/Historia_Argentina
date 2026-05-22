@@ -583,12 +583,60 @@
     background: linear-gradient(to right, transparent, var(--line), transparent);
   }
 
+/* ── INSTITUTIONAL HEADER ───────────────────────────────── */
+.institutional-header{
+  position:relative;
+  top:-3rem;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.8rem;
+  z-index:5;
+}
+
+.institutional-logo{
+  width: clamp(70px, 12vw, 140px);
+  height: clamp(70px, 12vw, 140px);
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(255,255,255,.15);
+}
+
+.institutional-text{
+  text-align:center;
+  color:#f5efd8;
+}
+
+.institutional-text h1{
+  font-family:'Cinzel', serif;
+  font-size:1.1rem;
+  letter-spacing:.12em;
+  margin-bottom:.2rem;
+}
+
+.institutional-text p{
+  font-family:'EB Garamond', serif;
+  font-size:1rem;
+  color:rgba(245,239,216,.8);
+}
+  
 </style>
 </head>
 <body>
 
 <!-- ════════════════════════════════════════════ HERO ═══ -->
 <section class="hero" id="top">
+    
+<div class="institutional-header">
+  <img src="https://int6029-sal.infd.edu.ar/sitio/wp-content/uploads/2022/06/mas-pequeno.png" alt="Logo IES 6029" class="institutional-logo">
+  <div class="institutional-text">
+    <h1>IES Nº 6029</h1>
+    <h4>Profesorado de Educación Secundaria en Informática</h4>
+  </div>
+</div>
+
   <!-- Animated sun rays -->
   <div class="hero-deco"></div>
   <div class="sun-ray" style="transform:rotate(0deg)translate(-50%,0);top:50%;left:50%"></div>
